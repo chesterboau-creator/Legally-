@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>專業律師團隊 | 刑事、民事、家事及遺產法律服務</title>
+    <style>
+        :root {
+            --primary-color: #0f2027;
+            --secondary-color: #203a43;
+            --accent-color: #c9a66b;
+            --text-light: #ffffff;
+            --text-dark: #333333;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft JhengHei", sans-serif;
+        }
+
+        body {
+            color: var(--text-dark);
+            line-height: 1.6;
+            background-color: #f8f9fa;
+        }
+
+        /* Header & Navigation */
+        header {
+            background-color: var(--primary-color);
+            color: var(--text-light);
+            padding: 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo h1 {
+            font-size: 24px;
+            letter-spacing: 1px;
+        }
+
+        .logo span {
+            color: var(--accent-color);
+        }
+
+        .cta-btn {
+            background-color: var(--accent-color);
+            color: var(--primary-color);
+            padding: 10px 20px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 4px;
+            transition: 0.3s;
+        }
+
+        .cta-btn:hover {
+            background-color: #b39258;
+            color: var(--text-light);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(15, 32, 39, 0.8), rgba(32, 58, 67, 0.8)), url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3') no-repeat center center/cover;
+            height: 60vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: var(--text-light);
+            padding: 20px;
+        }
+
+        .hero-content h2 {
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+
+        .hero-content p {
+            font-size: 18px;
+            margin-bottom: 30px;
+            max-width: 800px;
+        }
+
+        /* Services Section */
+        .services {
+            max-width: 1200px;
+            margin: 60px auto;
+            padding: 0 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 32px;
+            color: var(--primary-color);
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 3px;
+            background-color: var(--accent-color);
+            margin: 10px auto 0;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border-top: 4px solid var(--primary-color);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+            border-top-color: var(--accent-color);
+        }
+
+        .card h3 {
+            margin-bottom: 15px;
+            color: var(--primary-color);
+        }
+
+        /* Contact Section */
+        .contact {
+            background-color: var(--secondary-color);
+            color: var(--text-light);
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .contact p {
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+
+        .phone-link {
+            font-size: 36px;
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+
+        .phone-link:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--primary-color);
+            color: #888;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .hero-content h2 { font-size: 28px; }
+            .phone-link { font-size: 28px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <h1>誠正<span>法律事務所</span></h1>
+            </div>
+            <!-- 請將下面的電話號碼替換為你的真實電話 -->
+            <a href="tel:+85246945453" class="cta-btn">立即致電諮詢</a>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2>專業引航，捍衛您的合法權益</h2>
+            <p>我們在刑事、民事及各類訴訟領域擁有豐富經驗，提供收費透明、高效的專業法律服務。一通電話，讓我們為您提供即時接洽與初步評估。</p>
+            <a href="tel:+85246945453" class="cta-btn" style="font-size: 18px; padding: 15px 30px;">致電預約法律諮詢</a>
+        </div>
+    </section>
+
+    <section class="services">
+        <h2 class="section-title">我們的法律服務範圍</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>刑事訴訟</h3>
+                <p>提供陪同錄口供、保釋申請、刑事辯護及上訴等全方位法律支援，確保您的程序權利受保障。</p>
+            </div>
+            <div class="card">
+                <h3>民事訴訟</h3>
+                <p>處理商業糾紛、合約爭議、債務追討及各類民事索償，以最專業的策略爭取最大權益。</p>
+            </div>
+            <div class="card">
+                <h3>傷亡訴訟 (人身傷害索償)</h3>
+                <p>協助交通意外、工傷或疏忽引致的人身傷害受害者，向相關責任方追討應得的醫療及經濟賠償。</p>
+            </div>
+            <div class="card">
+                <h3>破產申請</h3>
+                <p>為面臨財政危機的個人或公司提供債務重組（IVA）及破產申請法律諮詢，協助您重回正軌。</p>
+            </div>
+            <div class="card">
+                <h3>家事法 (離婚與撫養權)</h3>
+                <p>處理離婚程序、子女撫養權爭奪、贍養費安排及財產分配，以同理心與專業保障家庭權益。</p>
+            </div>
+            <div class="card">
+                <h3>遺產承辦</h3>
+                <p>協助辦理遺囑認證（Proving a Will）、無遺囑遺產承辦書申請、遺產分配及財產信託規劃。</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <h2>需要即時法律協助？</h2>
+        <p>遭遇法律難題時，時間至關重要。請即致電，由我們的律師團隊為您了解案情並提供收費服務詳情。</p>
+        <!-- 請將下面的電話號碼替換為你的真實電話 -->
+        <a href="tel:+85246945453" class="phone-link">📞 +852 1234 5678</a>
+        <p style="font-size: 16px; color: #aaa;">辦公時間：星期一至五 09:00 - 18:00 (緊急刑事求助除外)</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 林志宇律師事務所. 版權所有. | 本網站資訊僅供參考，不構成正式法律意見。</p>
+    </footer>
+
+</body>
+</html>
